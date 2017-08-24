@@ -1,0 +1,503 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Hannah Jones
+ Author URI:   http://example.com
+ Template:     accelerate-theme
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+
+/*Import all styles from parent theme*/
+@import url("../accelerate-theme/style.css");
+
+
+
+/*Child styles*/
+.home-page {
+  background: url(img/taxi-photo.jpg) no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+
+/*header styles*/
+#masthead {
+  background: none repeat scroll 0 0 #45ac9d;
+}
+
+#masthead nav ul li{
+  display: inline;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+}
+
+#masthead li a{
+  font-weight: normal;
+}
+#masthead li a:active, #masthead li a:focus ,#masthead li a:hover{
+  font-weight: bold;
+}
+
+#menu-top-nav .current-menu-item a{
+  font-weight: bold;
+}
+
+.button {
+  background: none repeat scroll 0 0 #45ac9d;
+  padding: 1rem 4rem;
+}
+
+/*global footer styles*/
+.site-footer, .site-footer .site-info{
+  margin: 0 auto;
+}
+
+.site-description{
+  width: 40%;
+}
+
+#footer-tagline{
+  color: #45ac9d;
+  font-weight: normal;
+}
+
+#copyright-text{
+  font-size: 13px;
+}
+
+ul.social-media-menu{
+  list-style: none;
+}
+
+ul.social-media-menu li{
+  display: inline;
+  padding: 0 0.15rem;
+}
+
+.icon-twitter, .icon-facebook, .icon-linkedin{
+  color: white;
+  font-size: 1.5rem !important;
+}
+
+.icon-twitter::before, .icon-facebook::before, .icon-linkedin::before{
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+/*global page style*/
+#content{
+  width: 100%;
+}
+
+
+/*Blog Post & Twitter Feed on Homepage*/
+.blog-post,#secondary {
+  width: 45%;
+  float: left;
+  margin-bottom: 50px;
+}
+.blog-post{
+  margin-right: 5%;
+}
+#secondary{
+  margin-left: 5%;
+}
+
+.widget{
+  padding: 0;
+}
+
+.widget li a{
+  line-height: 1;
+}
+
+.blog-post h4, #secondary h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+    font-weight: 700;
+    margin: 36px 0 12px;
+}
+
+.blog-post h2, .twitter-name {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+    display: block;
+    margin: 36px 0 12px;
+}
+
+#secondary ul{
+  list-style: none;
+  margin: 0;
+}
+
+#secondary ul li, #secondary ul li a{
+  font: 17px/1.65 'open sans', Arial, sans-serif;
+  margin-bottom: 24px;
+/*  display: inline;*/
+}
+
+span.stt-em{
+  display: none;
+  visibility: collapse;
+  margin: 0;
+  line-height: 0;
+}
+
+.blog-post .read-more-link, #secondary .read-more-link {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+
+/*Featured Work on Homepage*/
+
+.featured-work h4{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.featured-work ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: 0;
+  padding-bottom:48px;
+}
+.featured-work ul li{
+  display: inline-block;
+  width: 30%;
+}
+.featured-work ul li:hover{
+  opacity: 0.8;
+}
+
+.featured-work ul li:nth-child(2){
+  padding: 0 4%
+}
+
+.featured-work img{
+  width: 100%;
+  min-height: 200px;
+}
+
+.featured-work a{
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.featured-work a:visited{
+  color: #333;
+}
+
+/*Our Services on Homepage*/
+.our-services h4{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.our-services ul{
+  list-style: none;
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom:48px;
+}
+.our-services ul li{
+  display: inline-block;
+  width: 25%;
+  padding: 0 5px;
+}
+.our-services ul li:hover{
+  opacity: 0.8;
+}
+
+.our-services ul li:nth-child(2), .our-services ul li:nth-child(3){
+  padding: 0;
+}
+
+.our-services img{
+/*  padding: 10px;*/
+  width: 90%;
+  height: auto;
+/*  min-height: 150px;*/
+}
+
+.our-services a{
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.our-services a:visited{
+  color: #333;
+}
+
+/*Blog Page*/
+
+.blog-page .main-content{
+  border-right: 1px dotted #e3e1e1;
+}
+
+/*Blog Page Sidebar*/
+aside.sidebar{
+  width: 30%;
+  padding-left: 1%;
+  border: none;
+}
+
+aside.sidebar h2{
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.screen-reader-text{
+  display: none;
+  visibility: hidden;
+  line-height: 0;
+  margin: 0;
+}
+
+#search-2{
+  margin: 10px 0;
+  line-height: normal;
+  padding-bottom: 50px;
+}
+#searchform input{
+  height: 37px;
+}
+
+#searchform #s, .mc4wp-form-fields p:first-child{
+  width: 70%;
+  display: inline;
+  float: left;
+}
+
+#searchform #searchsubmit, .mc4wp-form-fields p:nth-child(2){
+  width: 30%;
+  float: left;
+}
+#searchform #searchsubmit, .mc4wp-form-fields p:nth-child(2) input{
+  background-color: #45ac9d;
+  color: white;
+}
+
+/*Blog Post Footer Navigation*/
+.navigation{
+  border-top: 1px dotted #e3e1e1;
+}
+
+
+/*Case Studies*/
+
+article.case-study{
+  display: inline;
+  width: 100%;
+}
+article.case-study:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom:24px;
+}
+aside.case-study-sidebar{
+  color: #393939;
+  float: left;
+  width: 30%;
+  margin-right: 1rem;
+}
+.case-study-sidebar h1{
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.case-study-sidebar h6{
+    font-weight: 300;
+    margin: 1rem 0;
+    color: #a3a3a3;
+}
+.case-study-sidebar h5{
+    margin: 1rem 0 3rem;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.case-study-sidebar p{
+    margin-top: 0.5rem;
+}
+
+.case-study-sidebar a{
+  color:#333;
+}
+.case-study-sidebar a:active, .case-study-sidebar a:focus ,.case-study-sidebar a:hover{
+  color: #45ac9d;
+}
+
+
+.case-study-images{
+  float: left;
+  width: 60%;
+}
+
+.case-study-images img{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+  margin-top: 24px;
+}
+
+
+/*Contact Us Page*/
+#content.narrow-content{
+  width: 650px;
+  margin: 0 auto;
+}
+.nf-field-label label {
+  font-size: 14px;
+}
+nf-field:first-child, nf-field:nth-child(2){
+  float:left;
+  width: 48%;
+  display: inline;
+}
+nf-field:first-child{
+  margin-right: 1.5rem;
+}
+nf-field:last-child{
+  float: right;
+}
+#nf-field-4{
+  padding: 15px 75px;
+  background-color: #45ac9d;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5rem;
+}
+
+/*About Page*/
+.hero{
+    background: url(img/taxi-photo.jpg) no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
+    height: 300px;
+}
+.hero h1{
+  margin:0 auto;
+  padding-top: 50px;
+  font-size: 24px;
+  width: 600px;
+  text-align: center;
+  font-weight: 400;
+}
+.hero span{
+  color: #45AC9D;
+}
+
+.about-page .about-services{
+  text-align: center;
+}
+
+.about-page h5{
+  text-transform: uppercase;
+}
+
+.list-services{
+  list-style: none;
+  margin: 0 3rem;
+}
+
+.list-services li{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4rem 0;
+}
+
+.list-services li:nth-child(even){
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.list-services h2{
+  margin: 12px 0;
+}
+.list-services li:nth-child(odd) img{
+  padding-right: 1.75rem;
+}
+.list-services li:nth-child(even) img{
+  padding-left: 1.75rem;
+}
+
+.contact-link{
+  border-top: 1px dotted #e3e1e1;
+/*  border-bottom: 1px dotted #e3e1e1;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.contact-link a{
+  background-color: #45AC9D;
+  color: white;
+  padding: 15px 75px;
+  font-size: 18px;
+  font-weight: bold;
+  margin:0;
+}
+.contact-link h2{
+  margin: 0;
+  padding: 50px;
+}
+
+
+/*404 Page*/
+
+.page-404{
+  margin-top: 2rem;
+}
+.content-404{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.img-404{
+  margin-right: 1.5rem;
+}
+
+a.a-404{
+  color: #45AC9D;
+  font-weight: bold;
+}
